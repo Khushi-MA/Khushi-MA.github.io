@@ -1,5 +1,5 @@
-import React from 'react';  
-import './Projects.css'; // Importing the CSS for styling
+import React, { useState } from 'react';
+import './Projects.css';
 
 const projects = [
   {
@@ -40,6 +40,18 @@ const projects = [
 ];
 
 const Projects = () => {
+  const [popupContent, setPopupContent] = useState(null);
+  const [showPopup, setShowPopup] = useState(false);
+
+  const openPopup = (description) => {
+    setPopupContent(description);
+    setShowPopup(true);
+  };
+
+  const closePopup = () => {
+    setShowPopup(false);
+  };
+
   return (
     <section className="projects-section">
       <h2 className="section-title">Projects</h2>
@@ -48,10 +60,27 @@ const Projects = () => {
           <div key={project.id} className="project-card">
             <img src={project.image} alt={project.title} className="project-image" />
             <h3 className="project-title">{project.title}</h3>
-            <p className="project-description">{project.description}</p>
+            <p className="project-description">
+              {project.description}
+              <a href="#" onClick={() => openPopup(project.description)}>
+                Know More
+              </a>
+            </p>
           </div>
         ))}
       </div>
+
+      {showPopup && (
+        <div className="popup-overlay" onClick={closePopup}>
+          <div className="popup-content" onClick={(e) => e.stopPropagation()}>
+            <h3>{projects.find((project) => project.description === popupContent)?.title}</h3>
+            <p>{popupContent}</p>
+            <span className="close-btn" onClick={closePopup}>
+              Close
+            </span>
+          </div>
+        </div>
+      )}
     </section>
   );
 };

@@ -1,13 +1,31 @@
 import React from 'react';
-// import './Contact.css';
+import './Contact.css'; // Assuming you have CSS for styling
 
-function Contact() {
+const ContactSection = () => {
   return (
-    <div className="contact">
-      <h2>Contact Me</h2>
-      <p>Reach out to me via email or social media links.</p>
-    </div>
+    <section className="contact-section">
+      <h2 className="section-title">Contact Me</h2>
+      <div className="contact-content">
+        {/* LinkedIn Badge */}
+        <div
+          className="badge-base LI-profile-badge"
+          data-locale="en_US"
+          data-size="medium"
+          data-theme="light"
+          data-type="VERTICAL"
+          data-vanity="khushi-appannavar"
+          data-version="v1"
+        >
+          <a
+            className="badge-base__link LI-simple-link"
+            href="https://in.linkedin.com/in/khushi-appannavar?trk=profile-badge"
+          >
+            Khushi M Appannavar
+          </a>
+        </div>
+      </div>
+    </section>
   );
-}
+};
 
-export default Contact;
+export default ContactSection;

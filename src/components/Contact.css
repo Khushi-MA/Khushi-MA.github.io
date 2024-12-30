@@ -1,0 +1,21 @@
+.contact-section {
+    padding: 2rem;
+    text-align: center;
+    background-color: var(--lemonade); /* Match your theme */
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    color: var(--bright-blue);
+    margin-bottom: 1rem;
+  }
+  
+  .contact-content {
+    margin-top: 1.5rem;
+  }
+  
+  .badge-base {
+    margin: 0 auto;
+    display: inline-block;
+  }
+  
