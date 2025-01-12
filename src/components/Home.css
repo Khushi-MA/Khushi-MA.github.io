@@ -26,6 +26,11 @@
     font-size: 3rem;
     margin-bottom: 1rem;
     color: var(--royal-blue); /* Using variable for text color */
+    text-align: left;
+}
+
+title{
+    color: red;
 }
 
 .home-info p {

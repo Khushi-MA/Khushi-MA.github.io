@@ -58,3 +58,97 @@
   --wisteria: #9977b2;
 }
 
+
+h1{
+  font-size: 3rem;
+  /* margin-bottom: 1rem; */
+  /* Using variable for text color */
+  /* color: var(--royal-blue); */
+  color: rgb(0, 213, 255);
+  text-align: center;
+  margin: 0%;
+  margin-bottom: 1.5rem;
+  margin-top: 2rem;
+
+}
+
+h2{
+  color: rgb(0, 255, 149)
+}
+
+h3{
+  color: #9000ff;
+}
+
+h4{
+  color: #1100ff;
+}
+
+title{
+  color: #ff00e6;
+}
+
+
+/* for heading 1 */
+/* .section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #333;
+} */
+
+
+
+/* for heading 2 */
+h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: none;
+  margin: 0%;
+  /* margin-bottom: 1rem; */
+}
+
+
+
+
+/* for paragraph */
+/* @media (max-width: 768px) { */
+
+  /* for heading 2 */
+  /* .education-name {
+    font-size: 1rem;
+  } */
+
+   /*  for paragraph */
+  /* .education-degree,
+  .education-duration,
+  .education-grade,
+  .education-details li { */
+
+    /* font-size: 0.85rem; */
+
+  /* } */
+
+  h3{
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 0%;
+    margin-top: 1rem;
+  }
+
+  .subheading{
+    font-size: 1rem;
+    font-weight: bold;
+    /* margin-bottom: 1rem; */
+    color: #d9ff00;
+    margin: 0%;
+    margin-top: 1rem;
+}
+
+p{
+  font-size: 0.9rem;
+  margin: 0%;
+  margin-top: 1rem;
+  color: #ff00e6;
+}
+

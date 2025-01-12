@@ -4,7 +4,7 @@ import React from 'react';
 function FeatureSection() {
   return (
     <div className="feature-section">
-      <h2>Featured Posts</h2>
+      <h1>Featured Posts</h1>
       <p>Highlights of your work, achievements, or posts go here.</p>
     </div>
   );
